@@ -1,0 +1,57 @@
+.bg-blur {
+    background-color: rgba(233, 236, 239, 0.72) !important;
+    -moz-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.modal-bg-blur {
+    background-color: rgba(233, 236, 239, 0.88) !important;
+    border: none;
+    -moz-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.modal-bg-blur button,
+.modal-bg-blur h5,
+.modal-bg-blur p {
+    opacity: 0.8;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.finalImage {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.switchButtonsGroup {
+    width: 100%;
+}
+
+.switchButton {
+    width: 50%;
+}
+
+.currentModeShowLabel {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.handle-container {
+    margin-bottom: 20px;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-footer {
+    border: none;
+}
