@@ -41,6 +41,9 @@
     <main>
         <div class="container">
             <div class="jumbotron">
+                <input type="file" class="imgFileSelector" style="display:none" accept="image/*">
+                <a class="btn btn-secondary btn-lg btn-block selectImageButton" href="javascript:void(0);"
+                    role="button">选择图片</a>
                 <div style="display:none" class="handle-container">
                     <div class="btn-group switchButtonsGroup" role="group" aria-label="switchButtonsGroup">
                         <button type="button" class="btn btn-secondary btn-lg switchButton switchLeft">&lt;</button>
@@ -49,9 +52,6 @@
                     <div class="alert currentModeShowLabel" role="alert">模式：原图</div>
                     <img class="finalImage" src="" />
                 </div>
-                <input type="file" class="imgFileSelector" style="display:none" accept="image/*">
-                <a class="btn btn-secondary btn-lg btn-block selectImageButton" href="javascript:void(0);"
-                    role="button">选择图片</a>
             </div>
         </div>
         <!-- 模态框 - 关于 -->
