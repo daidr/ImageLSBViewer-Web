@@ -59,6 +59,7 @@ $(function () {
                 pixelArray.data[i - keep + 3] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
+            console.log(new Date().getTime() - bt)
             $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         full_alpha: function () {
@@ -71,6 +72,7 @@ $(function () {
                 pixelArray.data[i + 3] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
+            console.log(new Date().getTime() - bt)
             $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         red_plane_0: function () {
