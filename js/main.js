@@ -4,7 +4,7 @@ $(function () {
     let couldUseHotKeys = false;
     const functionsList = {
         original: function () {
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         color_inverse: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -15,7 +15,7 @@ $(function () {
                 pixelArray.data[i + 3] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         gray_bits: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -28,7 +28,7 @@ $(function () {
                 pixelArray.data[i + 3] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         random_color_map: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -47,7 +47,7 @@ $(function () {
                 pixelArray.data[i + 3] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         full_rgb: function (keep) {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -58,7 +58,7 @@ $(function () {
                 pixelArray.data[i - keep + 3] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         full_alpha: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -69,7 +69,7 @@ $(function () {
                 pixelArray.data[i + 3] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         red_plane_0: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -82,7 +82,7 @@ $(function () {
                 pixelArray.data[i + 3] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         green_plane_0: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -96,7 +96,7 @@ $(function () {
                 pixelArray.data[i + 2] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         blue_plane_0: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -109,7 +109,7 @@ $(function () {
                 pixelArray.data[i + 1] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         alpha_plane_0: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -122,7 +122,7 @@ $(function () {
                 pixelArray.data[i] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         red_plane_1: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -135,7 +135,7 @@ $(function () {
                 pixelArray.data[i + 3] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         green_plane_1: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -148,7 +148,7 @@ $(function () {
                 pixelArray.data[i + 2] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         blue_plane_1: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -161,7 +161,7 @@ $(function () {
                 pixelArray.data[i + 1] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         alpha_plane_1: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -174,7 +174,7 @@ $(function () {
                 pixelArray.data[i] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         red_plane_2: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -187,7 +187,7 @@ $(function () {
                 pixelArray.data[i + 3] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         green_plane_2: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -200,7 +200,7 @@ $(function () {
                 pixelArray.data[i + 2] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         blue_plane_2: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -214,7 +214,7 @@ $(function () {
                 pixelArray.data[i + 1] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
         alpha_plane_2: function () {
             let pixelArray = getAllPixel(offContext, selectedImage.width, selectedImage.height);
@@ -227,7 +227,7 @@ $(function () {
                 pixelArray.data[i] = 255;
             }
             offContext.putImageData(pixelArray, 0, 0);
-            $(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
+            //$(".finalImage").attr("src", offCanvas.toDataURL("image/png"));
         },
     }
     const modesList = [
@@ -419,7 +419,9 @@ $(function () {
         }
     }
     let offCanvas = document.createElement('canvas');
+    offCanvas.className = "finalImage";
     let offContext = offCanvas.getContext('2d');
+    document.getElementsByClassName('handle-container')[0].appendChild(offCanvas);
     $(".selectImageButton").click(function () {
         $(".imgFileSelector").val("");
         $(".imgFileSelector").click();
@@ -444,7 +446,7 @@ $(function () {
     });
     mainReader.onload = function (e) {
         selectedImage.src = e.target.result;
-        $(".finalImage").attr("src", e.target.result);
+        //$(".finalImage").attr("src", e.target.result);
         $(".handle-container").show();
     }
     selectedImage.onload = function () {
@@ -463,7 +465,7 @@ $(function () {
         offCanvas.width = selectedImage.width;
         offCanvas.height = selectedImage.height;
         offContext.clearRect(0, 0, selectedImage.width, selectedImage.height);
-        offContext.drawImage(selectedImage, 0, 0, selectedImage.width, selectedImage.height);
+        offContext.drawImage(selectedImage, 0, 0);
     }
 
     // 随机整数
